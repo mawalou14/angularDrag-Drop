@@ -1,3 +1,77 @@
-<mat-toolbar>
-  <span>Drag Drop Tutorial</span>
-</mat-toolbar>
+<!-- Nav -->
+<nav class="bg-gray-800 text-white">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-center">
+      Drag Drop Tutorial
+    </div>
+  </div>
+</nav>
+<!-- Main -->
+<main class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pt-5 flex justify-center">
+  <!-- Container -->
+  <div
+    cdkDropListGroup
+    class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-4"
+  >
+    <!-- Box 1 -->
+    <div
+      cdkDropList
+      [cdkDropListData]="dataService.container1()"
+      id="1"
+      (cdkDropListDropped)="drop($event)"
+      class="border-2 rounded-md p-5 min-w-[400px] bg-blue-500 bg-opacity-10 h-fit"
+    >
+      <div class="w-full text-center font-bold text-lg">First Container</div>
+      <div class="w-full border-t border-gray-300"></div>
+      @for(item of dataService.container1(); track item.id) {
+      <div
+        cdkDrag
+        [cdkDragData]="item"
+        class="mt-4 w-full rounded-r-md bg-white p-4 shadow-sm hover:shadow-lg"
+      >
+        {{ item.text }}
+      </div>
+      }
+    </div>
+    <!-- Box 2 -->
+    <div
+      cdkDropList
+      [cdkDropListData]="dataService.container2()"
+      id="2"
+      (cdkDropListDropped)="drop($event)"
+      class="border-2 rounded-md p-5 min-w-[400px] bg-green-500 bg-opacity-10 h-fit"
+    >
+      <div class="w-full text-center font-bold text-lg">Second Container</div>
+      <div class="w-full border-t border-gray-300"></div>
+      @for (item of dataService.container2(); track item.id) {
+      <div
+        cdkDrag
+        [cdkDragData]="item"
+        class="mt-4 w-full rounded-r-md bg-white p-4 shadow-sm hover:shadow-lg"
+      >
+        {{ item.text }}
+      </div>
+      }
+    </div>
+    <!-- Box 3 -->
+    <div
+      cdkDropList
+      [cdkDropListData]="dataService.container3()"
+      id="3"
+      (cdkDropListDropped)="drop($event)"
+      class="border-2 rounded-md p-5 min-w-[400px] bg-red-500 bg-opacity-10 h-fit"
+    >
+      <div class="w-full text-center font-bold text-lg">Third Container</div>
+      <div class="w-full border-t border-gray-300"></div>
+      @for(item of dataService.container3(); track item.id) {
+      <div
+        cdkDrag
+        [cdkDragData]="item"
+        class="mt-4 w-full rounded-r-md bg-white p-4 shadow-sm hover:shadow-lg"
+      >
+        {{ item.text }}
+      </div>
+      }
+    </div>
+  </div>
+</main>

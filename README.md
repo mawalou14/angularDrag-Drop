@@ -1,6 +1,6 @@
 # Angular 17 Drag and Drop Tutorial
 This project is part of a YouTube tutorial series demonstrating how to implement drag and drop functionality in an Angular 17 application. It provides a step-by-step guide to creating a simple yet interactive drag and drop interface using Angular Material's CDK.
-<br>
+
 ![drag-drop1](https://github.com/user-attachments/assets/bb102294-81ec-452e-9785-0ba4683a581d)
 
 

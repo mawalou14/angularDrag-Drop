@@ -1,27 +1,47 @@
-# DragDropCards
+# Angular 17 Drag and Drop Tutorial
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+This project is part of a YouTube tutorial series demonstrating how to implement drag and drop functionality in an Angular 17 application. It provides a step-by-step guide to creating a simple yet interactive drag and drop interface using Angular Material's CDK.
 
-## Development server
+## Overview
+In this tutorial, we build a basic drag and drop application using Angular 17. The project serves as a practical example to help developers understand and implement drag and drop functionality in their own Angular applications.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features Covered
+* Setting up an Angular 17 project
+* Implementing drag and drop with Angular Material CDK
+* Creating multiple drop containers
+* Styling the interface with tailwindCss and basic CSS
+* Handling drag and drop events
+* Updating data models based on drag and drop actions
 
-## Code scaffolding
+## Technologies Used
+* Angular 17
+* Angular Material
+* Tailwind Css
+* Angular CDK (Component Dev Kit)
+* TypeScript
+* HTML/CSS
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* ## ScreenShots
+  ![drag-drop1](https://github.com/user-attachments/assets/bb102294-81ec-452e-9785-0ba4683a581d)
 
-## Build
+  ![drag-drop2](https://github.com/user-attachments/assets/004bbce4-48e8-459d-babf-589bc82fbc6a)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Running the Project
+- clone the repository and move to the project's directory, using the command:
+   ```bash
+     git clone https://github.com/mawalou14/angularDrag-Drop.git
+     cd angularDrag-Drop
+     ```
+- Then at the root of the project's directory tap the command:
+   ```bash
+     npm install
+     ```
+   This is to install all the project's packages.
+  
+- Start the development server:
+   ```bash
+     ng serve
+     ```
+- The app is available in you browser under **http://localhost:4200**
+  
